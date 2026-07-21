@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campeonato Pro Clubs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Poppins,sans-serif;
+    color:white;
+
+    background:
+        linear-gradient(rgba(8,8,8,.82), rgba(8,8,8,.82)),
+        url("URubuDOpix.png") center center / cover no-repeat fixed;
+
+    min-height:100vh;
+}
+
+header{
+background:#0f0f0f;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:3px solid #32d3cb;
+}
+
+.logo-social{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.logo-social img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+    display:block;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.logo-social img:hover{
+    transform:scale(1.15);
+    filter:drop-shadow(0 0 8px #32d3cb);
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:30px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#32d3cb;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:70px 8%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+margin-top: -360px;
+
+}
+
+
+.hero h2{
+font-size:65px;
+font-family:Bebas Neue;
+line-height:70px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+color:#ccc;
+}
+
+.botao{
+display:inline-block;
+padding:15px 35px;
+background:#32d3cb;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+.hero img{
+width:360px;
+}
+
+section{
+padding:60px 8%;
+}
+
+.titulo{
+font-size:40px;
+font-family:Bebas Neue;
+margin-bottom:30px;
+color:#32d3cb;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:#141414;
+padding:25px;
+border-radius:15px;
+border:2px solid #222;
+transition:.3s;
+}
+
+.card:hover{
+border-color:#32d3cb;
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.status{
+color:#32d3cb;
+font-weight:bold;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table th{
+background:#32d3cb;
+color:black;
+padding:15px;
+}
+
+table td{
+padding:15px;
+border-bottom:1px solid #222;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#0f0f0f;
+margin-top:40px;
+color:#999;
+}
+
+.aviso-container{
+    display:flex;
+    justify-content:center;
+    margin-top:-20px;
+    margin-bottom:60px;
+}
+
+.aviso{
+    margin-top:-50px;
+    padding:20px;
+    background:rgba(8,40,40,.85);
+    border:2px solid #32d3cb;
+    border-radius:18px;
+    color:#fff;
+    line-height:1.7;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(50,211,203,.15);
+}
+
+.aviso strong{
+    color:#32d3cb;
+}
+
+.hero-direita{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 5px;
+}
+
+.aviso{
+    width:380px;
+    padding:20px;
+    background:rgba(8,40,40,.85);
+    border:2px solid #32d3cb;
+    border-radius:18px;
+    text-align:center;
+    line-height:1.7;
+    backdrop-filter:blur(10px);
+}
+
+.aviso strong{
+    color:#32d3cb;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-social">
+
+<a href="https://discord.gg/nQNmcVh2" target="_blank">
+    <img src="discord.ico" alt="Discord">
+</a>
+
+<a href="https://chat.whatsapp.com/FEUtYQOgZje1cr041C5fw6?s=cl&p=i&mlu=4&amv=1" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp">
+
+<a href="https://www.tiktok.com/@pixurubus" target="_blank">
+    <img src="tik-tok (1).png" alt="TikTok">
+</a>
+
+</a>
+
+</div>
+<!--<h1>PIX CUP</h1>--> <!--PIX CUP SUPERIOR NO SITE-->
+
+<nav>
+
+<a href="#">Início</a>
+<a href="#">Clubes</a>
+<a href="#">Hall da Fama</a>
+
+</nav>
+
+</header>
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h2>URUBUPIX CUP</h2>
+
+<p>
+A batalha começa aqui e agora.
+Monte seu clube e entre para disputar o maior torneio de pro clubs. EA FC26 (Nova geração)
+</p>
+
+
+</div>
+
+<div class="hero-direita">
+
+    <img src="urubu voando.png" alt="Mascote">
+
+    <div class="aviso">
+        <strong>📢 Aviso Oficial</strong><br>
+        Todas as informações oficiais do torneio serão divulgadas exclusivamente pelo
+        <strong>WhatsApp</strong> e pelo <strong>Discord</strong>.<br>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<section>
+
+<h2 class="titulo">Clubes Inscritos</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🦅 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+<div class="card">
+<h3>🔥 -</h3>   <!--TIME-->
+<p class="status">-</p><!--CONFIRMAÇÃO OU PENDENCIA-->
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">🏆 Hall da Fama</h2>
+
+<table>
+
+<tr>
+<th>Posição</th>
+<th>Clube</th>
+<th>Títulos</th>
+</tr>
+
+<tr>
+<td>🥇</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>🥈</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>🥉</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>4º</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>5º</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+© 2026 Campeonato Pro Clubs
+
+</footer>
+
+</body>
+</html>
