@@ -200,6 +200,130 @@ color:#999;
     color:#32d3cb;
 }
 
+/* DESTAQUE DO CAMPEÃO */
+
+.campeao-destaque{
+    margin: 0 8% 60px;
+    padding: 35px 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20,20,20,.98),
+            rgba(5,30,30,.95)
+        );
+
+    border: 2px solid #32d3cb;
+    border-radius: 20px;
+
+    box-shadow: 0 0 25px rgba(50,211,203,.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+.campeao-destaque:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(50,211,203,.25);
+}
+
+.campeao-info{
+    position: relative;
+    z-index: 2;
+}
+
+.campeao-label{
+    color: #32d3cb;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 28px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.campeao-info h2{
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+}
+
+.campeao-info p{
+    color: #ccc;
+
+    font-size: 17px;
+}
+
+.campeao-titulos{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 22px;
+
+    border: 1px solid #32d3cb;
+
+    border-radius: 25px;
+
+    color: #32d3cb;
+
+    font-weight: bold;
+}
+
+.campeao-trofeu{
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 100px;
+
+    filter: drop-shadow(
+        0 0 15px rgba(50,211,203,.4)
+    );
+}
+
+
+/* RESPONSIVO DO CAMPEÃO */
+
+@media (max-width: 768px){
+
+    .campeao-destaque{
+        margin: 0 8% 40px;
+        padding: 30px 20px;
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+
+    .campeao-info h2{
+        font-size: 48px;
+    }
+
+    .campeao-label{
+        font-size: 24px;
+    }
+
+    .campeao-trofeu{
+        font-size: 75px;
+    }
+
+}    
+    
 .hero-direita{
     display:flex;
     flex-direction:column;
@@ -342,8 +466,38 @@ Monte seu clube e entre para disputar o maior torneio de pro clubs. EA FC26 (Nov
 </div>
 
 
+<!-- DESTAQUE DO CAMPEÃO -->
+
+<div class="campeao-destaque">
+
+    <div class="campeao-info">
+
+        <div class="campeao-label">
+            🏆 CAMPEÃO DA ÚLTIMA EDIÇÃO
+        </div>
+
+        <h2>JACKSONSS5</h2>
+
+        <p>
+            Bicampeão da Urubu Cup
+        </p>
+
+        <div class="campeao-titulos">
+            🏆 02 TÍTULOS
+        </div>
+
+    </div>
+
+    <div class="campeao-trofeu">
+        🏆
+    </div>
+
+</div>
+
 
 <section>
+
+<h2 class="titulo">Clubes Inscritos 3ª EDIÇÃO (22/08)</h2>
 
 <h2 class="titulo">Clubes Inscritos 3ª EDIÇÃO (22/08)</h2>
 
