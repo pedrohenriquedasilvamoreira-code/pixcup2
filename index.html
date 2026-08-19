@@ -203,127 +203,87 @@ color:#999;
 /* DESTAQUE DO CAMPEÃO */
 
 .campeao-destaque{
-    margin: 0 8% 60px;
-    padding: 35px 45px;
+    width:100%;
+    margin-top:25px;
+    padding:20px 30px;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(20,20,20,.98),
-            rgba(5,30,30,.95)
-        );
+    background:rgba(8,20,20,.92);
 
-    border: 2px solid #32d3cb;
-    border-radius: 20px;
+    border:2px solid #32d3cb;
+    border-radius:20px;
 
-    box-shadow: 0 0 25px rgba(50,211,203,.15);
+    box-shadow:0 0 25px rgba(50,211,203,.18);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    gap: 30px;
+    gap:35px;
 
-    position: relative;
-    overflow: hidden;
+    position:relative;
+    z-index:10;
 
-    transition: .3s;
+    backdrop-filter:blur(8px);
 }
 
-.campeao-destaque:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 0 35px rgba(50,211,203,.25);
-}
+.campeao-escudo{
+    width:120px;
+    height:120px;
+    object-fit:contain;
 
-.campeao-info{
-    position: relative;
-    z-index: 2;
-}
-
-.campeao-label{
-    color: #32d3cb;
-
-    font-family: 'Bebas Neue', sans-serif;
-
-    font-size: 28px;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 10px;
-}
-
-.campeao-info h2{
-    font-family: 'Bebas Neue', sans-serif;
-
-    font-size: 60px;
-
-    line-height: 1;
-
-    margin-bottom: 10px;
-}
-
-.campeao-info p{
-    color: #ccc;
-
-    font-size: 17px;
-}
-
-.campeao-titulos{
-    display: inline-block;
-
-    margin-top: 20px;
-
-    padding: 10px 22px;
-
-    border: 1px solid #32d3cb;
-
-    border-radius: 25px;
-
-    color: #32d3cb;
-
-    font-weight: bold;
-}
-
-.campeao-trofeu{
-    position: relative;
-
-    z-index: 2;
-
-    font-size: 100px;
-
-    filter: drop-shadow(
-        0 0 15px rgba(50,211,203,.4)
+    filter:drop-shadow(
+        0 0 12px rgba(50,211,203,.35)
     );
 }
 
+.campeao-info{
+    text-align:left;
+}
 
-/* RESPONSIVO DO CAMPEÃO */
+.campeao-label{
+    color:#32d3cb;
 
-@media (max-width: 768px){
+    font-family:'Bebas Neue',sans-serif;
 
-    .campeao-destaque{
-        margin: 0 8% 40px;
-        padding: 30px 20px;
+    font-size:25px;
 
-        flex-direction: column-reverse;
+    letter-spacing:1px;
 
-        text-align: center;
-    }
+    margin-bottom:5px;
+}
 
-    .campeao-info h2{
-        font-size: 48px;
-    }
+.campeao-info h2{
+    font-family:'Bebas Neue',sans-serif;
 
-    .campeao-label{
-        font-size: 24px;
-    }
+    font-size:50px;
 
-    .campeao-trofeu{
-        font-size: 75px;
-    }
+    line-height:1;
 
+    margin-bottom:5px;
+}
+
+.campeao-info p{
+    color:#ccc;
+
+    font-size:16px;
+}
+
+.campeao-titulos{
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:7px 18px;
+
+    border:1px solid #32d3cb;
+
+    border-radius:25px;
+
+    color:#32d3cb;
+
+    font-weight:bold;
 }    
-    
+
 .hero-direita{
     display:flex;
     flex-direction:column;
@@ -463,7 +423,6 @@ Monte seu clube e entre para disputar o maior torneio de pro clubs. EA FC26 (Nov
 
 </div>
 
-</div>
 
 
 <!-- DESTAQUE DO CAMPEÃO -->
