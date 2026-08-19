@@ -222,6 +222,110 @@ color:#999;
     color:#32d3cb;
 }
 
+/* =================================
+   DESTAQUE DO CAMPEÃO
+   ================================= */
+
+.destaque-campeao{
+    width:84%;
+    margin:-70px auto 20px;
+
+    position:relative;
+    z-index:20;
+
+    padding:18px 30px;
+
+    background:rgba(10,18,18,.96);
+
+    border:2px solid #32d3cb;
+    border-radius:18px;
+
+    box-shadow:0 0 25px rgba(50,211,203,.18);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:25px;
+}
+
+.destaque-campeao .escudo-campeao{
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 10px rgba(50,211,203,.4));
+}
+
+.destaque-campeao .campeao-texto{
+    text-align:left;
+}
+
+.destaque-campeao .campeao-label{
+    color:#32d3cb;
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:22px;
+
+    letter-spacing:1px;
+}
+
+.destaque-campeao h2{
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:45px;
+
+    line-height:1;
+
+    margin:3px 0;
+}
+
+.destaque-campeao p{
+    color:#bbb;
+
+    font-size:14px;
+}
+
+.destaque-campeao .titulos{
+    color:#32d3cb;
+
+    font-weight:bold;
+
+    font-size:14px;
+}
+
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    .destaque-campeao{
+        width:84%;
+
+        margin:-30px auto 20px;
+
+        padding:18px;
+
+        gap:15px;
+    }
+
+    .destaque-campeao .escudo-campeao{
+        width:65px;
+        height:65px;
+    }
+
+    .destaque-campeao .campeao-label{
+        font-size:18px;
+    }
+
+    .destaque-campeao h2{
+        font-size:35px;
+    }
+
+}
+    
 @media (max-width: 768px){
 
     header{
@@ -337,6 +441,34 @@ Monte seu clube e entre para disputar o maior torneio de pro clubs. EA FC26 (Nov
         <strong>WhatsApp</strong>.<br>
     </div>
 
+<!-- DESTAQUE DO CAMPEÃO -->
+
+<div class="destaque-campeao">
+
+    <img
+        src="escudo-jacksonss5.png"
+        alt="Jacksonss5"
+        class="escudo-campeao"
+    >
+
+    <div class="campeao-texto">
+
+        <div class="campeao-label">
+            🏆 CAMPEÃO DA ÚLTIMA EDIÇÃO
+        </div>
+
+        <h2>JACKSONSS5</h2>
+
+        <p>Bicampeão da Urubu Cup</p>
+
+        <div class="titulos">
+            🏆 02 TÍTULOS
+        </div>
+
+    </div>
+
+</div>
+    
 </div>
 
 </div>
